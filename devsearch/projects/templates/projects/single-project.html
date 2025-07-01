@@ -2,9 +2,14 @@
 
 {%block content%}
 
-<h1>Single Project</h1>
+<h3>Single Project</h3>
 
 <h1>Project Title: {{project.title}}</h1>
+
+{% for tag in tags%}
+<span style="border:2px solid gray;">{{tag}}</span>
+{%endfor%}
+
 <p>{{project.description}}</p>
 
 
